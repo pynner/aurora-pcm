@@ -211,6 +211,18 @@ hr.black{
     -o-background-size: cover;
 }
 
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+
 /* About */
 
 .about {
@@ -280,4 +292,12 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+/* Features padding */
+.anchor {
+  display: block;
+  position: relative;
+  top: -65px;
+  visibility: hidden;
 }
