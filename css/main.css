@@ -63,19 +63,22 @@ footer{
 #home-button sup{
     font-size: 15px;
 }
-
 #wrapper{
     max-width: 768;
     margin: 0 auto;
 }
-
-#Logo{
+.logo-div {
+	padding-top: 100px;
+    max-width: 700px;
+    /*border: 1px solid black; use this to see the bounds of the logo :)*/
     display: block;
-    padding: 2% 2% 2% 2%;
-    height: 40%;
-    width: 40%;
-    min-width: 288px;
-    min-height: 168px;
+    margin: 0 auto;
+}
+#Logo {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .text-vertical-center {
