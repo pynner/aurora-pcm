@@ -13,8 +13,9 @@ footer{
     color: white;
 }
 
-#Acknowledgements{
-    padding: 50px 30px 50px 30px;
+
+#acknowledgements{
+    margin: 50px 30px 50px 30px;
 }
 
 #LU{
@@ -54,6 +55,13 @@ footer{
 .img-responsive{
     margin: 0 auto;
     display: block;
+}
+
+#Logo{
+    margin: 0 auto;
+    display: block;
+    height: 40%;
+    width: 40%;
 }
 
 .text-vertical-center {
@@ -211,6 +219,18 @@ hr.black{
     -o-background-size: cover;
 }
 
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+
 /* About */
 
 .about {
@@ -264,9 +284,9 @@ hr.black{
 }
 
 .h3-white {
-	
+
 	color: white;
-	
+
 }
 
 /* Footer */
@@ -280,4 +300,12 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+/* Features padding */
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }
