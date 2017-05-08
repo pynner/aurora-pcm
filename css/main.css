@@ -13,8 +13,8 @@ footer{
     color: white;
 }
 
-#Acknowledgements{
-    padding: 50px 30px 50px 30px;
+#acknowledgements{
+    margin: 50px 30px 50px 30px;
 }
 
 #LU{
@@ -54,6 +54,13 @@ footer{
 .img-responsive{
     margin: 0 auto;
     display: block;
+}
+
+#Logo{
+    margin: 0 auto;
+    display: block;
+    height: 40%;
+    width: 40%;
 }
 
 .text-vertical-center {
@@ -276,9 +283,9 @@ hr.black{
 }
 
 .h3-white {
-	
+
 	color: white;
-	
+
 }
 
 /* Footer */
