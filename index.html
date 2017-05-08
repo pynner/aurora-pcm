@@ -20,19 +20,18 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    
+
 
 </head>
 
 <body>
-	
+
 	<div id="fb-root"></div>
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <a class="navbar-brand smoothscroll" href="#top">
-        <!-- Change to better looking logo for small header -->
-        <img class="img-responsive center-block" style = "vertical-align: -10%" src="img/aurora_text.png" alt="Aurora" style="width:80px;height:35px;">
-            
+        <a class="navbar-brand smoothscroll" href="#top">
+            <!-- Change to better looking logo for small header -->
+            <img id="aurora-title" class="img-responsive center-block"style = "vertical-align: -10%" src="img/aurora_text.png" alt="Aurora">
         </a>
       <div class="navbar-header">
       <!-- Future: Move mega logo to middle of nav -->
@@ -40,9 +39,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>    
+        </button>
       </div>
-      
+
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
             <li><a class="smoothscroll" href="#about">about</a></li>
@@ -57,9 +56,9 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <img style = "min-height: 60px" class="img-responsive" src="img/Aurora.png"></img>
-            <h3 style = "text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.73); color = #ffffff">Scrap the D&amp;O's for Aurora Patient Care Model</h3>
+        <div class="container-fluid text-vertical-center">
+            <img id="Logo" style = "min-height: 60px" src="img/Aurora.png"></img>
+            <h3>Scrap the D&amp;O's for Aurora Patient Care Model</h3>
             <br>
             <span id="arrow" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
         </div>
@@ -81,7 +80,7 @@
 
     <!-- Features-->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section class="services bg-primary"">
+    <section class="features bg-primary" style="background-color: #066bc4">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -168,6 +167,7 @@
                                     <strong>Facebook</strong>
                                 </h4>
                                 <p>Like our page and join the discussion.</p>
+
 								
 								<div id="fb-root"></div>
 								<script>(function(d, s, id) {
@@ -180,6 +180,9 @@
 								
 								<div class="fb-like" data-href="http://aurora-pcm.ca" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 								
+
+
+
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -190,11 +193,19 @@
                                     <strong>Twitter</strong>
                                 </h4>
                                 <p>Follow us for the latest news and updates.</p>
+
                                 
 								<a href="https://twitter.com/Aurora_PCM" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @Aurora_PCM</a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 								<a href="https://twitter.com/share" class="twitter-share-button" data-text="Lorem Ipsum" data-via="Aurora_PCM" data-size="small" data-related="Aurora_PCM" data-hashtags="aurorapcm">Tweet</a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+								<a href="https://twitter.com/Aurora_PCM" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Aurora_PCM</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Lorem Ipsum" data-via="Aurora_PCM" data-size="large" data-related="Aurora_PCM" data-hashtags="aurorapcm">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -225,11 +236,11 @@
     </section>
 
     <!-- Contact Us -->
-    <div id="contact" class="Contact bg-primary">
+    <div id="contact" class="Contact bg-primary" style="background-color: #066bc4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Contact  Us</h3>
+                    <h2>Contact  Us</h2>
                     <hr class="small">
                     <a href="mailto:admin@aurora-pcm.ca" class="btn btn-lg btn-light">Send an email</a>
                 </div>
@@ -265,7 +276,6 @@
             </div>
         </div>
     </div>
-
 <!-- Footer -->
 <footer>
     <div class="container-fluid">
@@ -286,7 +296,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/init.js"></script>
-    
+
 <!-- DO WE NEED THIS?
     <script>
     // Scrolls to the selected menu item on the page
