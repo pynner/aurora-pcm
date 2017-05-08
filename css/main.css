@@ -57,11 +57,25 @@ footer{
     display: block;
 }
 
-#Logo{
+#home-button p{
+    font-size: 30px;
+}
+#home-button sup{
+    font-size: 15px;
+}
+
+#wrapper{
+    max-width: 768;
     margin: 0 auto;
+}
+
+#Logo{
     display: block;
+    padding: 2% 2% 2% 2%;
     height: 40%;
     width: 40%;
+    min-width: 288px;
+    min-height: 168px;
 }
 
 .text-vertical-center {
@@ -274,27 +288,27 @@ hr.black{
 }
 
 h2 {
-	
+
 	font-family: 'Quicksand', sans-serif;
-	
+
 }
 
 h3 {
-	
+
 	font-family: 'Quicksand', sans-serif;
-	
+
 }
 
 h4 {
-	
+
     font-family: 'Quicksand', sans-serif;
-	
+
 }
 
 p {
-	
+
     font-family: 'Quicksand', sans-serif;
-	
+
 }
 
 /* Call to Action */
