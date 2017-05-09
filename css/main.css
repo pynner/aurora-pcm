@@ -13,6 +13,21 @@ footer{
     color: white;
 }
 
+.navbar-left{
+    padding-left: 4%;
+}
+
+#navbar-features{
+    padding-left: 65%;
+}
+
+.navbar-right{
+    padding-right: 4%;
+}
+
+#navbar-spread{
+    padding-right: 45%;
+}
 
 #acknowledgements{
     margin: 50px 30px 50px 30px;
