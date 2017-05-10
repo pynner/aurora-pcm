@@ -13,6 +13,10 @@ footer{
     color: white;
 }
 
+.smoothscroll{
+    font-size: 20px;
+}
+
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -77,6 +81,7 @@ footer{
 #home-button p{
     font-size: 30px;
 }
+
 
 #wrapper{
     max-width: 768;
