@@ -35,22 +35,6 @@ footer{
     transition: all 1000ms ease;
 }
 
-.navbar-left{
-    padding-left: 4%;
-}
-
-#navbar-features{
-    padding-left: 65%;
-}
-
-.navbar-right{
-    padding-right: 4%;
-}
-
-#navbar-spread{
-    padding-right: 45%;
-}
-
 #acknowledgements{
     margin: 50px 30px 50px 30px;
 }
@@ -76,10 +60,6 @@ footer{
     font-size: 40px;
 }
 
-.navbar{
-    background-color: white;
-}
-
 #nav-bar{
     padding-left: 32%;
 }
@@ -97,9 +77,7 @@ footer{
 #home-button p{
     font-size: 30px;
 }
-#home-button sup{
-    font-size: 15px;
-}
+
 #wrapper{
     max-width: 768;
     margin: 0 auto;
