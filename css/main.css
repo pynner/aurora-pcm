@@ -44,20 +44,25 @@ footer{
 }
 
 #LU{
-    padding-top: 50px;
-    height: 60%;
-    width: 60%;
+    padding-top: 65px;
+    height: 80%;
+    width: 80%;
 }
 
 #NOSM{
-    height: 60%;
-    width: 60%;
+    padding-top: 25px;
+    height: 70%;
+    width: 70%;
 }
 
 #TBRHRI{
-    padding:
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
+}
+
+#SPONSOR{
+        height: 80%;
+        width: 80%;
 }
 
 .glyphicon-menu-down{
