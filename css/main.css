@@ -34,6 +34,11 @@ footer{
 	}
 }
 
+#caption{
+    color: white;
+    font-size: 45px;
+}
+
 #arrow{
     animation: bounce 2s infinite;
     transition: all 1000ms ease;
