@@ -13,34 +13,65 @@ footer{
     color: white;
 }
 
+.smoothscroll{
+    font-size: 20px;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+#caption{
+    color: white;
+    font-size: 45px;
+}
+
+#arrow{
+    animation: bounce 2s infinite;
+    transition: all 1000ms ease;
+}
 
 #acknowledgements{
     margin: 50px 30px 50px 30px;
 }
 
 #LU{
-    padding-top: 50px;
-    height: 60%;
-    width: 60%;
+    padding-top: 40px;
+    height: 80%;
+    width: 80%;
 }
 
 #NOSM{
-    height: 60%;
-    width: 60%;
+    padding-top: 25px;
+    height: 70%;
+    width: 70%;
 }
 
 #TBRHRI{
-    padding:
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
+}
+
+#SPONSOR{
+        height: 80%;
+        width: 80%;
 }
 
 .glyphicon-menu-down{
     font-size: 40px;
-}
-
-.navbar{
-    background-color: white;
 }
 
 #nav-bar{
@@ -60,9 +91,8 @@ footer{
 #home-button p{
     font-size: 30px;
 }
-#home-button sup{
-    font-size: 15px;
-}
+
+
 #wrapper{
     max-width: 768;
     margin: 0 auto;
