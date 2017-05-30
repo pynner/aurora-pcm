@@ -4,6 +4,12 @@ body {
     height: 100%;
 }
 
+b{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 0.5px 0.5px 1px #000
+}
+
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
