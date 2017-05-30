@@ -13,6 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -180,14 +181,65 @@
     <!-- Contact Us -->
     <div id="contact" class="Contact bg-primary unselectable" style="background-color: #066bc4">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);">Contact  Us</h2>
-                    <hr class="small">
-                    <a href="mailto:admin@aurora-pcm.ca" class="btn btn-lg btn-light" target = "_blank">Send an email</a>
-                </div>
-            </div>
-        </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="text-center" style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);">Contact Us</h2>
+                    <hr class="small text-center">  
+
+                    <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <label for="form_name">Name *</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Enter your name here" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <label for="form_email">Email *</label>
+                                        <input type="email" class="email form-control" id="email" placeholder="Enter your email here" required data-error="Please enter your email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="controls">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="message" rows="7" placeholder="Enter your message here" class="form-control" required data-error="Write your message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted" style="color: #fff"><strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div><!-- /.8 -->
+
+            </div> <!-- /.row-->
     </div>
     <div id="acknowledgements">
 		<div class="container-fluid unselectable">
@@ -242,5 +294,9 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/init.js"></script>
+
+    <!-- Main JS  -->
+    <script type="text/javascript" src="js/form-validator.min.js"></script>  
+    <script type="text/javascript" src="js/contact-form-script.js"></script>
 </body>
 </html>
