@@ -1,0 +1,36 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aurora\-pcm\.ca$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.aurora\-pcm\.ca$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ "https\:\/\/aurora\-pcm\.ca\/$1" [R=301,L]
+
+# ----------------------------------------------------------------------
+# Expires headers (for better cache control)
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+    # Enable expirations
+    ExpiresActive On 
+
+    # Default directive
+    ExpiresDefault "access plus 1 month"
+
+    # My favicon
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Images
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+	
+	# Document HTML
+	ExpiresByType text/html "access plus 0 seconds"
+
+    # CSS
+    ExpiresByType text/css "access plus 1 month"
+
+    # Javascript
+    ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+Options -Indexes

@@ -1,347 +1,361 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta property="og:image" content="https://www.aurora-pcm.ca/img/Aurora-BG.jpg" />
-	<meta property="og:description" content="Patient Care Design is an ideology that begins with the assumption that Health Care Providers (HCPs) should spend their valuable time with their patients, and in collaborative, rapid, reflective problem solving.  Minimal time should be spent managing extraneous processes (such as recording documentation, manual calculation, and order entry).   In doing so, HCPs become empowered to spend more time in the construction of high quality patient care planning.   Central to this endeavour is “lifting” HCPs into the realm of design tools more familiar to architects, and engineers." />
-	<meta property="og:title" content="Aurora - Patient Care Design" />
-    <title>Aurora PCM</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous">
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" integrity="sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet">
-    <!-- Favicon -->
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="img/favicon/favicon-128.png" sizes="128x128" />
-	<meta name="application-name" content="Aurora PCM"/>
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
-</head>
-<body>
-    <!-- Facebook script and div -->
-	<div id="fb-root"></div>
-    <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <nav class="navbar-inverse navbar-fixed-top" role="navigation">
-
-    <!-- Linkedin script -->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-
-    <!-- Twitter script -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-      <div class="navbar-header">
-      <!-- Future: Move mega logo to middle of nav -->
-		<a id="home-button" class="navbar-brand smoothscroll" href="#top"><p>aurora</p></a>
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-			<li><a id="navbar-features" class="smoothscroll" href="#features">patient care design</a></li>
-            <li><a class="smoothscroll" href="#about">about</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-			<li><a id="navbar-spread" class="smoothscroll" href="#spread">spread the word</a></li>
-          	<li><a class="smoothscroll" href="#contact">contact &nbsp; &nbsp; &nbsp;</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="container-fluid text-vertical-center">
-            <div class = "logo-div">
-				<img id="Logo" src="img/Aurora.png"></img>
-				<h2 id="caption" style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);" class="unselectable">patient care design</h2>
-			</div>
-            <br>
-            <div id="arrow" class="glyphicon glyphicon-menu-down"></div>
-        </div>
-    </header>
-	<!-- Features-->
-	<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-	<section class="features bg-primary"  style="background-color: #fff">
-		<div class="container-fluid unselectable">
-			<div class="row text-center">
-				<div class="col-lg-10 col-lg-offset-1">
-					<a id="features" class="anchor"></a>
-					<h2>Patient Care Design</h2>
-					<hr class="black small">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="spread-item">
-								<img src="img/collaborate.png"/>
-							</span>
-								<h4>
-									<strong>Collaboration</strong>
-								</h4>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="spread-item">
-								<img src="img/scrap.png"/>
-							</span>
-								<h4>
-									<strong>Patient Care Models</strong>
-								</h4>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="spread-item">
-								<img src="img/design.png"/>
-							</span>
-								<h4>
-									<strong>Design Environment</strong>
-								</h4>
-							</div>
-						</div>
-					<p class="lead"><b>Patient Care Design</b> is an ideology that begins with the assumption that Health Care Providers (HCPs) should spend their valuable time with their patients, and in <b>collaborative, rapid, reflective problem solving</b>.  Minimal time should be spent managing extraneous processes (such as recording documentation, manual calculation, and order entry).   In doing so, HCPs become empowered to spend more time in the construction of high quality patient care planning.   Central to this endeavour is “lifting” HCPs into the realm of design tools more familiar to architects, and engineers</p>
-				</div>
-			</div>
-		</div>
-	</section>
-    <!-- About -->
-    <section id="about" class="about"  style="background-color: #066bc4">
-        <div class="container-fluid unselectable">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);">About Aurora</h2>
-                    <hr class="small">
-                    <p class="lead aboutTitle"><b>Who are we?</b><p><p class="lead">We are a team of students, researchers, HCPs and academics from Lakehead University, NOSM and TBRHSC</p>
-					<p class="lead aboutTitle"><b>Our Mission</b><p><p class="lead"> We want to start a movement with learners, academics and industry partners to iteratively define, refine and empirically study the impact of first generation Patient Care Design Tools in live clinical teaching environments</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Spread the Word-->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="spread" class="spread bg-primary" style = "background-color: #fff">
-        <div class="container-fluid unselectable">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Spread the Word</h2>
-                    <hr class="black">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="spread-item">
-                                <a href="https://www.facebook.com/aurorapcm" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                            </span>
-                                <h4>
-                                    <strong>Facebook</strong>
-                                </h4>
-                                <p>Like our page and join the discussion.</p>
-								<div class="fb-like" data-href="https://www.facebook.com/aurorapcm/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="spread-item">
-                                <a href="https:/www.twitter.com/Aurora_PCM" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                            </span>
-                                <h4>
-                                    <strong>Twitter</strong>
-                                </h4>
-                                <p>Follow us for the latest news and updates.</p>
-								<a href="https://twitter.com/Aurora_PCM" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @Aurora_PCM</a>
-                                <a class="twitter-share-button"
-                                    href="https://twitter.com/share"
-                                    data-size="small"
-                                    data-text="Check out @Aurora_PCM, an upcoming medical software suite!"
-                                    data-url="https://aurora-pcm.ca"
-                                    data-hashtags="AuroraPCM, PatientCareDesign, eHealth2017"
-                                    data-via=""
-                                    data-related="Aurora_PCM">
-                                    Tweet
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="spread-item">
-                                <a href="https://www.linkedin.com/company-beta/16254039/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                            </span>
-                                <h4>
-                                    <strong>LinkedIn</strong>
-                                </h4>
-                                <p>Connect with our product on LinkedIn.</p>
-								<!--share-->
-								<script type="IN/FollowCompany" data-id="16254039"></script>
-								<!--follow-->
-								<script type="IN/Share" data-url="aurora-pcm.ca"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- Contact Us -->
-    <div id="contact" class="Contact bg-primary unselectable" style="background-color: #066bc4">
-        <div class="container-fluid">
-            <div class="col-lg-8 col-lg-offset-2">
-                    <h2 class="text-center" style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);">Contact Us</h2>
-                    <hr class="small text-center">
-
-                    <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
-
-                        <div class="messages"></div>
-
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="controls">
-                                        <label for="form_name">Name *</label>
-                                        <input type="text" id="name" class="form-control" placeholder="Enter your name here" required data-error="Please enter your name">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="controls">
-                                        <label for="form_email">Email *</label>
-                                        <input type="email" class="email form-control" id="email" placeholder="Enter your email here" required data-error="Please enter your email">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-
-                                </div>
-                                <div class="col-md-6">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="controls">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="message" rows="7" placeholder="Enter your message here" class="form-control" required data-error="Write your message"></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted" style="color: #fff"><strong>*</strong> These fields are required.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div><!-- /.8 -->
-
-            </div> <!-- /.row-->
-    </div>
-    <div id="acknowledgements">
-		<div class="container-fluid unselectable">
-	        <div class="row text-center">
-	            <div class="col-lg-10 col-lg-offset-1">
-	                <h2 style="word-wrap: break-word;">Acknowledgements</h2>
-	                <hr class="black">
-	                <p>We had a little help from a couple of people to make Aurora possible and would like to thank them for their support.</p>
-	                <br>
-	                <div class="row">
-	                    <div class="col-md-3 col-sm-4">
-	                        <div class="spread-item">
-	                            <a href="https://www.lakeheadu.ca" target="_blank"><img id="LU" class"img" alt="Lakehead University" align"center" src="img/LU.jpg"></img></a>
-	                        </div>
-	                    </div>
-	                    <br>
-	                    <div class="col-md-3 col-sm-4">
-	                        <div class="spread-item">
-	                            <a href="https://www.nosm.ca" target="_blank"><img id="NOSM" class"img" alt="NOSM" align="center" src="img/NOSM.jpg"></img></a>
-	                        </div>
-	                    </div>
-	                    <div class="col-md-3 col-sm-4">
-	                        <div class="spread-item">
-	                            <a href="https://www.tbrri.com" target="_blank"><img id="TBRHRI" class"img" alt="TBRRI" style="padding-top: 20px" align="center" src="img/TBRHRI.jpg"></img></a>
-	                        </div>
-	                    </div>
-						<div class="col-md-3 col-sm-4">
-	                        <div class="spread-item">
-	                            <a href="https://www.e-healthconference.com/" target="_blank"><img id="SPONSOR" alt="e-Health Conference" class"img" style="padding-top: 20px" align="center" src="img/sponsor.jpg"></img></a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-<!-- Footer -->
-<footer>
-    <div class="container-fluid unselectable">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <p>Made with <i class="fa fa-heart pulse"></i> in Thunder Bay, ON Canada</p>
-                <hr class="small">
-                <p> &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Aurora-PCM </p>
-            </div>
-        </div>
-    </div>
-    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-</footer>
-
-<!-- jQuery -->
-<script
-  src="https://code.jquery.com/jquery-1.11.1.min.js"
-  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
-  crossorigin="anonymous"></script>
-<!-- Bootstrap Core JavaScript -->
-<script
-  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"></script>
-<!-- Custom JS -->
-<script src="js/init.js"></script>
-<!-- Form JS -->
-<script
-  type="text/javascript"
-  src="js/form-validator.min.js"></script>
-<script
-  type="text/javascript"
-  src="js/contact-form-script.js"></script>
-
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta property="og:image" content="https://www.aurora-pcm.ca/img/Aurora-BG.jpg" />
+	<meta property="og:description" content="Patient Care Design is an ideology that begins with the assumption that Health Care Providers (HCPs) should spend their valuable time with their patients, and in collaborative, rapid, reflective problem solving.  Minimal time should be spent managing extraneous processes (such as recording documentation, manual calculation, and order entry).   In doing so, HCPs become empowered to spend more time in the construction of high quality patient care planning.   Central to this endeavour is “lifting” HCPs into the realm of design tools more familiar to architects, and engineers." />
+	<meta property="og:title" content="Aurora - Patient Care Design" />
+    <title>Aurora PCM</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" integrity="sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand|Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="https://cdn.aurora-pcm.ca/css/main.css" rel="stylesheet">
+    <!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cdn.aurora-pcm.ca/img/favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="https://cdn.aurora-pcm.ca/img/favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="https://cdn.aurora-pcm.ca/img/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="https://cdn.aurora-pcm.ca/img/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="https://cdn.aurora-pcm.ca/img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="https://cdn.aurora-pcm.ca/img/favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="Aurora PCM"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="https://cdn.aurora-pcm.ca/img/favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="https://cdn.aurora-pcm.ca/img/favicon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="https://cdn.aurora-pcm.ca/img/favicon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="https://cdn.aurora-pcm.ca/img/favicon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="https://cdn.aurora-pcm.ca/img/favicon/mstile-310x310.png" />
+</head>
+<body>
+    <!-- Facebook script and div -->
+	<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <nav class="navbar-inverse navbar-fixed-top" role="navigation">
+
+    <!-- Linkedin script -->
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+
+    <!-- Twitter script -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <div class="navbar-header">
+      <!-- Future: Move mega logo to middle of nav -->
+		<a id="home-button" class="navbar-brand smoothscroll" href="#top"><p>aurora</p></a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+			<li><a id="navbar-features" class="smoothscroll" href="#features">patient care design</a></li>
+            <li><a class="smoothscroll" href="#about">about</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+			<li><a id="navbar-spread" class="smoothscroll" href="#spread">spread the word</a></li>
+          	<li><a class="smoothscroll" href="#contact">contact &nbsp; &nbsp; &nbsp;</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="container-fluid text-vertical-center">
+            <div class = "logo-div">
+				<img id="Logo" src="https://cdn.aurora-pcm.ca/img/Aurora.png"></img>
+				<h2 id="caption" style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);" class="unselectable">patient care design</h2>
+			</div>
+            <br>
+            <div id="arrow" class="glyphicon glyphicon-menu-down"></div>
+        </div>
+    </header>
+	<!-- Features-->
+	<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+	<section class="features bg-primary"  style="background-color: #fff">
+		<div class="container-fluid unselectable">
+			<div class="row text-center">
+				<div class="col-lg-10 col-lg-offset-1">
+					<a id="features" class="anchor"></a>
+					<h2>Patient Care Design</h2>
+					<hr class="black small">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="spread-item">
+								<img width="60%" height="60%" src="https://cdn.aurora-pcm.ca/img/collaborate.png"/>
+							</span>
+								<h4>
+									<strong>Collaboration</strong>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="spread-item">
+								<img width="60%" height="60%" src="https://cdn.aurora-pcm.ca/img/scrap.png"/>
+							</span>
+								<h4>
+									<strong>Patient Care Models</strong>
+								</h4>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="spread-item">
+								<img width="60%" height="60%" src="https://cdn.aurora-pcm.ca/img/design.png"/>
+							</span>
+								<h4>
+									<strong>Design Environment</strong>
+								</h4>
+							</div>
+						</div>
+					<p class="lead"><b>Patient Care Design</b> is an ideology that begins with the assumption that Health Care Providers (HCPs) should spend their valuable time with their patients, and in <b>collaborative, rapid, reflective problem solving</b>.  Minimal time should be spent managing extraneous processes (such as recording documentation, manual calculation, and order entry).   In doing so, HCPs become empowered to spend more time in the construction of high quality patient care planning.   Central to this endeavour is “lifting” HCPs into the realm of design tools more familiar to architects, and engineers</p>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- About -->
+    <section id="about" class="about"  style="background-color: #066bc4">
+        <div class="container-fluid unselectable">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);">About Aurora</h2>
+                    <hr class="small">
+                    <p class="lead aboutTitle"><b>Who are we?</b><p><p class="lead">We are a team of students, researchers, HCPs and academics from Lakehead University, NOSM and TBRHSC</p>
+					<p class="lead aboutTitle"><b>Our Mission</b><p><p class="lead"> We want to start a movement with learners, academics and industry partners to iteratively define, refine and empirically study the impact of first generation Patient Care Design Tools in live clinical teaching environments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spread the Word-->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="spread" class="spread bg-primary" style = "background-color: #fff">
+        <div class="container-fluid unselectable">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Spread the Word</h2>
+                    <hr class="black">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="spread-item">
+                                <a href="https://www.facebook.com/aurorapcm" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            </span>
+                                <h4>
+                                    <strong>Facebook</strong>
+                                </h4>
+                                <p>Like our page and join the discussion.</p>
+								<div class="fb-like" data-href="https://www.facebook.com/aurorapcm/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="spread-item">
+                                <a href="https:/www.twitter.com/Aurora_PCM" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            </span>
+                                <h4>
+                                    <strong>Twitter</strong>
+                                </h4>
+                                <p>Follow us for the latest news and updates.</p>
+								<a href="https://twitter.com/Aurora_PCM" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @Aurora_PCM</a>
+                                <a class="twitter-share-button"
+                                    href="https://twitter.com/share"
+                                    data-size="small"
+                                    data-text="Check out @Aurora_PCM, an upcoming medical software suite!"
+                                    data-url="https://aurora-pcm.ca"
+                                    data-hashtags="AuroraPCM, PatientCareDesign, eHealth2017"
+                                    data-via=""
+                                    data-related="Aurora_PCM">
+                                    Tweet
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="spread-item">
+                                <a href="https://www.linkedin.com/company-beta/16254039/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            </span>
+                                <h4>
+                                    <strong>LinkedIn</strong>
+                                </h4>
+                                <p>Connect with our product on LinkedIn.</p>
+								<!--share-->
+								<script type="IN/FollowCompany" data-id="16254039"></script>
+								<!--follow-->
+								<script type="IN/Share" data-url="aurora-pcm.ca"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Contact Us -->
+    <div id="contact" class="Contact bg-primary unselectable" style="background-color: #066bc4">
+        <div class="container-fluid">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="text-center" style = "text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);">Contact Us</h2>
+                    <hr class="small text-center">
+
+                    <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <label for="form_name">Name *</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Enter your name here" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="controls">
+                                        <label for="form_email">Email *</label>
+                                        <input type="email" class="email form-control" id="email" placeholder="Enter your email here" required data-error="Please enter your email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="controls">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="message" rows="7" placeholder="Enter your message here" class="form-control" required data-error="Write your message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted" style="color: #fff"><strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div><!-- /.8 -->
+
+            </div> <!-- /.row-->
+    </div>
+    <div id="acknowledgements">
+		<div class="container-fluid unselectable">
+	        <div class="row text-center">
+	            <div class="col-lg-10 col-lg-offset-1">
+	                <h2 style="word-wrap: break-word;">Acknowledgements</h2>
+	                <hr class="black">
+	                <p>We had a little help from a couple of people to make Aurora possible and would like to thank them for their support.</p>
+	                <br>
+	                <div class="row">
+	                    <div class="col-md-3 col-sm-4">
+	                        <div class="spread-item">
+	                            <a href="https://www.lakeheadu.ca" target="_blank"><img id="LU" class"img" alt="Lakehead University" align"center" src="https://cdn.aurora-pcm.ca/img/LU.jpg"></img></a>
+	                        </div>
+	                    </div>
+	                    <br>
+	                    <div class="col-md-3 col-sm-4">
+	                        <div class="spread-item">
+	                            <a href="https://www.nosm.ca" target="_blank"><img id="NOSM" class"img" alt="NOSM" align="center" src="https://cdn.aurora-pcm.ca/img/NOSM.jpg"></img></a>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-3 col-sm-4">
+	                        <div class="spread-item">
+	                            <a href="https://www.tbrri.com" target="_blank"><img id="TBRHRI" class"img" alt="TBRRI" style="padding-top: 20px" align="center" src="https://cdn.aurora-pcm.ca/img/TBRHRI.jpg"></img></a>
+	                        </div>
+	                    </div>
+						<div class="col-md-3 col-sm-4">
+	                        <div class="spread-item">
+	                            <a href="https://www.e-healthconference.com/" target="_blank"><img id="SPONSOR" alt="e-Health Conference" class"img" style="padding-top: 20px" align="center" src="https://cdn.aurora-pcm.ca/img/sponsor.jpg"></img></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid unselectable">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <p>Made with <i class="fa fa-heart pulse"></i> in Thunder Bay, ON Canada</p>
+                <hr class="small">
+                <p> &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Aurora-PCM </p>
+            </div>
+        </div>
+    </div>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
+
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-1.11.1.min.js"
+  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
+  crossorigin="anonymous"></script>
+<!-- Bootstrap Core JavaScript -->
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+<!-- Form JS -->
+<script
+  type="text/javascript"
+  src="https://cdn.aurora-pcm.ca/js/form-validator.min.js"></script> 
+<script 
+  type="text/javascript" 
+  src="https://cdn.aurora-pcm.ca/js/contact-form-script.min.js"></script>
+
+  <script>
+      // Smooth scrolling -->
+      $('.smoothscroll').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 800, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+  </script>
+
+</body>
+</html>
