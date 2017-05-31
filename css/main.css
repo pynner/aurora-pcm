@@ -14,6 +14,10 @@ body {
     height: 100%;
 }
 
+.aboutTitle{
+    font-size: 25px;
+}
+
 b{
     font-weight: bold;
     text-shadow: 0.5px 0.5px 1px #000
@@ -300,12 +304,14 @@ hr.black{
 /* About */
 
 .about {
+    color: white;
     padding: 50px 0;
 }
 
 /* Services */
 
 .features {
+    color: black;
     padding: 50px 0;
 }
 
