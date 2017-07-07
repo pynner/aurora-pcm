@@ -59,11 +59,14 @@ footer{
 #caption{
     color: white;
     font-size: 45px;
+    text-align: center;
 }
 
 #arrow{
     animation: bounce 2s infinite;
     transition: all 1000ms ease;
+    display: block;
+    text-align: center;
 }
 
 #acknowledgements{
